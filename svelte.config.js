@@ -23,7 +23,7 @@ const config = {
 		}),
 
 		paths: {
-			base: '/iriyanto.com'
+			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
 		}
 	}
 };
