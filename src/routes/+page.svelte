@@ -3,7 +3,7 @@
 	import Icon from '@iconify/svelte';
 	import { Avatar } from '@skeletonlabs/skeleton';
 	import profileImage from '$lib/assets/iriyanto-profile.avif';
-	import brandLogo from '$lib/assets/logo-brand-iriyanto-nobg.avif';
+	import brandLogo from '$lib/assets/logo-brand-iriyanto-mini-nobg.avif';
 
 	const identity = {
 		name: 'Iriyanto',
