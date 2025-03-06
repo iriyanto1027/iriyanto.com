@@ -8,7 +8,8 @@
 	const identity = {
 		name: 'Iriyanto',
 		profession: 'Software Engineer',
-		headline: `Hi, I'm Iriyanto—a Software Engineer who believes that great technology starts with great code. Let's build something amazing together!`
+		headline: `Hail, traveler. I am well-versed in the backend arts of NestJS and Laravel, now exploring new frontiers with Svelte. For five years, I have forged scalable systems and led warriors of code. Now, I seek to build an open-source stronghold—where knowledge flows, innovation thrives, and our legacy stands eternal. &#128293;`,
+		quote: `Zin los dii, coder! May your open-source legacy be sung in the halls of Devhalla! &#127984;` // (Zin los dii = "Honor is mine" – seperti menyatakan bahwa menulis kode hebat adalah suatu kehormatan)
 	};
 
 	const socials = [
@@ -69,18 +70,23 @@
 			<div class="flex gap-3 justify-center items-center">
 				<Avatar width="w-32 sm:w-24" src={profileImage} alt="Iriyanto Image Profile"></Avatar>
 				<div class="px-2 sm:px-0">
-					<h1 class="text-3xl font-semibold">{identity.name}</h1>
-					<h2 class="text-2xl">{identity.profession}</h2>
+					<h1 class="text-2xl md:text-3xl font-semibold">{identity.name}</h1>
+					<h2 class="text-lg md:text-2xl">{identity.profession}</h2>
 				</div>
 			</div>
 		</section>
 		<br />
 		<section id="headline">
-			<div class="card p-4 text-md">
-				{identity.headline}
+			<div class="card p-4 sm:text-sm md:text-base">
+				{@html identity.headline}
+			</div>
+			<div class="p-5">
+				<blockquote class="blockquote sm:text-sm md:text-base">
+					{@html identity.quote}
+				</blockquote>
 			</div>
 		</section>
-		<section id="sosial" class="flex gap-3 justify-center mt-5">
+		<section id="sosial" class="flex gap-3 justify-center">
 			{#each socials as social}
 				<a
 					class="btn-icon btn-icon-sm variant-filled"
@@ -97,7 +103,7 @@
 		<section id="project">
 			<h1 class="h1">Projects</h1>
 			<div class="mt-1">
-				<p>Explore my work and see what I&rsquo;ve been developing.</p>
+				<p>Venture forth and behold the creations I have forged in code.</p>
 			</div>
 			<div class="flex flex-wrap mt-5 gap-5 justify-center">
 				{#if false}
@@ -128,7 +134,9 @@
 					{/each}
 				{:else}
 					<div class="flex my-10 py-10 justify-center items-center">
-						<p class="text-md text-center">No projects yet, but stay tuned!</p>
+						<p class="text-md text-center">
+							No projects have been forged yet, but the journey has just begun. Stay tuned!
+						</p>
 					</div>
 				{/if}
 			</div>
@@ -140,7 +148,7 @@
 		<section id="post">
 			<h1 class="h1">Posts</h1>
 			<div class="mt-1">
-				<p>Insights, ideas, and experiences—read my latest blog posts.</p>
+				<p>Insights, ideas, and experiences—delve into my latest writings.</p>
 			</div>
 
 			<div class="flex flex-wrap mt-5 gap-5 justify-center">
@@ -172,7 +180,9 @@
 					{/each}
 				{:else}
 					<div class="flex my-10 py-10 justify-center items-center">
-						<p class="text-md text-center">No blog posts yet, but stay tuned for updates!</p>
+						<p class="text-md text-center">
+							No tales have been written yet, but soon, the scrolls shall be filled. Stay tuned!
+						</p>
 					</div>
 				{/if}
 			</div>
