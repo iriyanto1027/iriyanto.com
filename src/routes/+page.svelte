@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { base } from '$app/paths';
 	import Icon from '@iconify/svelte';
-	import { Avatar } from '@skeletonlabs/skeleton';
+	import { Avatar } from '@skeletonlabs/skeleton-svelte';
 	import profileImage from '$lib/assets/iriyanto-profile.avif';
 	import brandLogo from '$lib/assets/logo-brand-iriyanto-mini-nobg.avif';
 
@@ -64,13 +64,13 @@
 	<meta name="author" content="Iriyanto" />
 </svelte:head>
 
-<div class="max-w-5xl mx-auto">
-	<main class="max-w-3xl mx-auto p-10">
+<div class="mx-auto max-w-5xl">
+	<main class="mx-auto max-w-3xl p-10">
 		<section id="identity" class="mt-7">
-			<div class="flex gap-3 justify-center items-center">
-				<Avatar width="w-32 sm:w-24" src={profileImage} alt="Iriyanto Image Profile"></Avatar>
+			<div class="flex items-center justify-center gap-3">
+				<Avatar size="w-32 sm:w-24" src={profileImage} name="Iriyanto Image Profile"></Avatar>
 				<div class="px-2 sm:px-0">
-					<h1 class="text-2xl md:text-3xl font-semibold">{identity.name}</h1>
+					<h1 class="text-2xl font-semibold md:text-3xl">{identity.name}</h1>
 					<h2 class="text-lg md:text-2xl">{identity.profession}</h2>
 				</div>
 			</div>
@@ -86,13 +86,13 @@
 				</blockquote>
 			</div>
 		</section>
-		<section id="sosial" class="flex gap-3 justify-center">
+		<section id="sosial" class="flex items-center justify-center gap-3">
 			{#each socials as social}
 				<a
-					class="btn-icon btn-icon-sm variant-filled"
+					class="btn-icon btn-icon-lg variant-filled"
 					href={social.link}
 					target="_blank"
-					aria-label={social.name}><Icon icon={social.icon} width="24" height="24" /></a
+					aria-label={social.name}><Icon icon={social.icon} width="32" height="32" /></a
 				>
 			{/each}
 		</section>
@@ -105,13 +105,13 @@
 			<div class="mt-1">
 				<p>Venture forth and behold the creations I have forged in code.</p>
 			</div>
-			<div class="flex flex-wrap mt-5 gap-5 justify-center">
+			<div class="mt-5 flex flex-wrap justify-center gap-5">
 				{#if false}
 					{#each projects as project}
 						<div class="card sm:max-w-80">
 							<header class="card-header flex justify-center">
 								<img
-									class="w-[300px] max-w-full aspect-[16/9] overflow-hidden relative"
+									class="relative aspect-[16/9] w-[300px] max-w-full overflow-hidden"
 									src={project.imageUrl}
 									alt={project.name}
 								/>
@@ -119,7 +119,7 @@
 							<section class="p-4">
 								<h2 class="h2">{project.name}</h2>
 								<p class="text-sm">{project.description}</p>
-								<div class="mt-5 flex flex-wrap gap-1 justify-center">
+								<div class="mt-5 flex flex-wrap justify-center gap-1">
 									{#each project.techStacks as techStack}
 										<span class="badge variant-filled-primary font-normal">{techStack}</span>
 									{/each}
@@ -133,7 +133,7 @@
 						</div>
 					{/each}
 				{:else}
-					<div class="flex my-10 py-10 justify-center items-center">
+					<div class="my-10 flex items-center justify-center py-10">
 						<p class="text-md text-center">
 							No projects have been forged yet, but the journey has just begun. Stay tuned!
 						</p>
@@ -151,13 +151,13 @@
 				<p>Insights, ideas, and experiences—delve into my latest writings.</p>
 			</div>
 
-			<div class="flex flex-wrap mt-5 gap-5 justify-center">
+			<div class="mt-5 flex flex-wrap justify-center gap-5">
 				{#if false}
 					{#each projects as project}
 						<div class="card sm:max-w-80">
 							<header class="card-header flex justify-center">
 								<img
-									class="w-[300px] max-w-full aspect-[16/9] overflow-hidden relative"
+									class="relative aspect-[16/9] w-[300px] max-w-full overflow-hidden"
 									src={project.imageUrl}
 									alt={project.name}
 								/>
@@ -165,7 +165,7 @@
 							<section class="p-4">
 								<h2 class="h2">{project.name}</h2>
 								<p class="text-sm">{project.description}</p>
-								<div class="mt-5 flex flex-wrap gap-1 justify-center">
+								<div class="mt-5 flex flex-wrap justify-center gap-1">
 									{#each project.techStacks as techStack}
 										<span class="badge variant-filled-primary font-normal">{techStack}</span>
 									{/each}
@@ -179,7 +179,7 @@
 						</div>
 					{/each}
 				{:else}
-					<div class="flex my-10 py-10 justify-center items-center">
+					<div class="my-10 flex items-center justify-center py-10">
 						<p class="text-md text-center">
 							No tales have been written yet, but soon, the scrolls shall be filled. Stay tuned!
 						</p>
@@ -189,91 +189,40 @@
 		</section>
 	</main>
 	<footer
-		class="w-full max-w-3xl mx-auto p-4 py-16 md:p-12 md:py-24 space-y-10 text-xs md:text-base"
+		class="mx-auto w-full max-w-3xl space-y-10 p-4 py-16 text-xs md:p-12 md:py-24 md:text-base"
 	>
 		<!-- Section 1 -->
 		<section
-			class="flex flex-col md:flex-row justify-between items-center md:items-start space-y-5 md:space-y-0"
+			class="flex flex-col items-center justify-center space-y-5 md:flex-row md:items-start md:space-y-0"
 		>
-			<div
-				class="grid grid-cols-1 gap-2 place-content-center place-items-center md:place-items-start"
-			>
+			<div class="grid grid-cols-1 place-content-center place-items-center gap-2">
 				<img width="40px" height="40px" src={brandLogo} alt="Logo Brand Iriyanto" />
 				<p class="!text-sm opacity-80">Build with SvelteKit, Tailwind and Skeleton</p>
-				<!-- Current Version -->
-				<span class="badge variant-soft">v1.0.0</span>
-			</div>
-			<div class="hidden grid-cols-3 gap-8">
-				<div class="space-y-6">
-					<h6 class="h6">Explore</h6>
-					<ul class="space-y-3">
-						<li><a class="anchor" href="/docs/introduction">Introduction</a></li>
-						<li><a class="anchor" href="/docs/get-started">Get Started</a></li>
-						<li><a class="anchor" href="/blog">Blog</a></li>
-					</ul>
-				</div>
-				<div class="space-y-6">
-					<h6 class="h6">Features</h6>
-					<ul class="space-y-3">
-						<li><a class="anchor" href="/elements/core">Tailwind</a></li>
-						<li><a class="anchor" href="/actions/clipboard">Svelte</a></li>
-						<li><a class="anchor" href="/utilities/codeblocks">Utilities</a></li>
-					</ul>
-				</div>
-				<div class="space-y-6">
-					<h6 class="h6">Project</h6>
-					<ul class="space-y-3">
-						<li>
-							<a
-								class="anchor"
-								href="https://github.com/skeletonlabs"
-								target="_blank"
-								rel="noreferrer">Github Organization</a
-							>
-						</li>
-						<li>
-							<a
-								class="anchor"
-								href="https://www.npmjs.com/org/skeletonlabs"
-								target="_blank"
-								rel="noreferrer">NPM Organization</a
-							>
-						</li>
-						<li>
-							<a
-								class="anchor"
-								href="https://www.npmjs.com/package/@skeletonlabs/skeleton"
-								target="_blank"
-								rel="noreferrer">NPM Package</a
-							>
-						</li>
-					</ul>
-				</div>
 			</div>
 		</section>
 		<hr class="opacity-50" />
 		<!-- Section 2 -->
 		<section
-			class="flex flex-col md:flex-row justify-between items-center md:items-start space-y-4 md:space-y-0"
+			class="flex flex-col items-center justify-between space-y-4 md:flex-row md:items-start md:space-y-0"
 		>
 			<p>
 				<a class="anchor" href="{base}/blog" target="_blank" rel="noreferrer"> Blog </a>
-				<span class="opacity-10 mx-2">|</span>
+				<span class="mx-2 opacity-10">|</span>
 				<a class="anchor" href="{base}/tools" target="_blank" rel="noreferrer"> Tools </a>
 			</p>
-			<div class="flex gap-6">
+			<div class="flex gap-3">
 				{#each socials as social}
 					<a
-						class="btn-icon btn-icon-sm variant-filled opacity-75 hover:opacity-100"
+						class="btn-icon btn-icon-lg variant-filled opacity-75 hover:opacity-100"
 						href={social.link}
 						target="_blank"
-						aria-label={social.name}><Icon icon={social.icon} width="24" height="24" /></a
+						aria-label={social.name}><Icon icon={social.icon} width="32" height="32" /></a
 					>
 				{/each}
 			</div>
 		</section>
 		<section class="flex justify-center">
-			<p class="!text-lg opacity-80 flex items-center gap-1">
+			<p class="flex items-center gap-1 !text-lg opacity-80">
 				Made with <Icon icon="mdi:love" width="24" height="24" color="#d10202" /> by Iriyanto - &copy;
 				{currentYear}
 			</p>

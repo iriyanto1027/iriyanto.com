@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+@source '../node_modules/@skeletonlabs/skeleton-svelte/dist';
+
+@import '@skeletonlabs/skeleton';
+@import '@skeletonlabs/skeleton/optional/presets';
+
+/* Register Preset Themes */
+@import '@skeletonlabs/skeleton/themes/catppuccin';
+
+/* Register a Custom Themes */
+/* Make sure to resolve the relative path. */
+/* Note the .css extension is optional. */
+@import '../cyanida-theme';
+
+::selection {
+	@apply text-black; /* Ubah warna sesuai keinginan */
+}
