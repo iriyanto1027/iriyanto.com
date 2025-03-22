@@ -59,8 +59,8 @@
 
 <svelte:head>
 	<title>Iriyanto</title>
-	<meta name="description" content="This is where the description goes for SEO" />
-	<meta name="keywords" content="Iriyanto" />
+	<meta name="description" content="Portfolio Website for Iriyanto" />
+	<meta name="keywords" content="iriyanto,portfolio" />
 	<meta name="author" content="Iriyanto" />
 </svelte:head>
 
@@ -101,15 +101,15 @@
 		<br />
 		<br />
 		<section id="project">
-			<h1 class="h1">Projects</h1>
+			<h1 class="text-primary-500 text-5xl font-bold">Projects</h1>
 			<div class="mt-1">
 				<p>Venture forth and behold the creations I have forged in code.</p>
 			</div>
 			<div class="mt-5 flex flex-wrap justify-center gap-5">
 				{#if false}
 					{#each projects as project}
-						<div class="card sm:max-w-80">
-							<header class="card-header flex justify-center">
+						<div class="card border-1 sm:max-w-80">
+							<header class="card-header flex justify-center pt-4">
 								<img
 									class="relative aspect-[16/9] w-[300px] max-w-full overflow-hidden"
 									src={project.imageUrl}
@@ -121,12 +121,14 @@
 								<p class="text-sm">{project.description}</p>
 								<div class="mt-5 flex flex-wrap justify-center gap-1">
 									{#each project.techStacks as techStack}
-										<span class="badge variant-filled-primary font-normal">{techStack}</span>
+										<span class="badge preset-filled-primary-500 font-semibold">{techStack}</span>
 									{/each}
 								</div>
 							</section>
 							<footer class="card-footer">
-								<a class="btn-icon !bg-transparent" href="https://github.com/iriyanto1027"
+								<a
+									class="btn-icon btn-icon-lg !bg-transparent"
+									href="https://github.com/iriyanto1027"
 									><Icon icon="emojione-monotone:right-arrow" width="30" height="30" /></a
 								>
 							</footer>
@@ -146,7 +148,7 @@
 		<br />
 		<br />
 		<section id="post">
-			<h1 class="h1">Posts</h1>
+			<h1 class="text-primary-500 text-5xl font-bold">Posts</h1>
 			<div class="mt-1">
 				<p>Insights, ideas, and experiences—delve into my latest writings.</p>
 			</div>
@@ -154,8 +156,8 @@
 			<div class="mt-5 flex flex-wrap justify-center gap-5">
 				{#if false}
 					{#each projects as project}
-						<div class="card sm:max-w-80">
-							<header class="card-header flex justify-center">
+						<div class="card border-1 sm:max-w-80">
+							<header class="card-header flex justify-center pt-4">
 								<img
 									class="relative aspect-[16/9] w-[300px] max-w-full overflow-hidden"
 									src={project.imageUrl}
@@ -167,12 +169,14 @@
 								<p class="text-sm">{project.description}</p>
 								<div class="mt-5 flex flex-wrap justify-center gap-1">
 									{#each project.techStacks as techStack}
-										<span class="badge variant-filled-primary font-normal">{techStack}</span>
+										<span class="badge preset-filled-primary-500 font-semibold">{techStack}</span>
 									{/each}
 								</div>
 							</section>
 							<footer class="card-footer">
-								<a class="btn-icon !bg-transparent" href="https://github.com/iriyanto1027"
+								<a
+									class="btn-icon btn-icon-lg !bg-transparent"
+									href="https://github.com/iriyanto1027"
 									><Icon icon="emojione-monotone:right-arrow" width="30" height="30" /></a
 								>
 							</footer>
