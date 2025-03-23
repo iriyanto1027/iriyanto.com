@@ -101,7 +101,7 @@
 		<br />
 		<br />
 		<section id="project">
-			<h1 class="text-primary-500 text-5xl font-bold">Projects</h1>
+			<h1 class="h1">Projects</h1>
 			<div class="mt-1">
 				<p>Venture forth and behold the creations I have forged in code.</p>
 			</div>
@@ -148,7 +148,7 @@
 		<br />
 		<br />
 		<section id="post">
-			<h1 class="text-primary-500 text-5xl font-bold">Posts</h1>
+			<h1 class="h1">Posts</h1>
 			<div class="mt-1">
 				<p>Insights, ideas, and experiences—delve into my latest writings.</p>
 			</div>

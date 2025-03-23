@@ -13,7 +13,7 @@
 /* Note the .css extension is optional. */
 @import '../cyanida-theme';
 
-/* Dark Mode */
+/* Dark Mode Switch */
 @custom-variant dark (&:where([data-mode=dark], [data-mode=dark] *));
 
 /* For Selected Text */
