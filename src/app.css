@@ -18,5 +18,5 @@
 
 /* For Selected Text */
 ::selection {
-	@apply text-black; /* Ubah warna sesuai keinginan */
+	@apply text-surface-950; /* Ubah warna sesuai keinginan */
 }

@@ -68,7 +68,8 @@
 	<main class="mx-auto max-w-3xl p-10">
 		<section id="identity" class="mt-7">
 			<div class="flex items-center justify-center gap-3">
-				<Avatar size="w-32 sm:w-24" src={profileImage} name="Iriyanto Image Profile"></Avatar>
+				<Avatar size="w-24 md:w-32 md:h-32" src={profileImage} name="Iriyanto Image Profile"
+				></Avatar>
 				<div class="px-2 sm:px-0">
 					<h1 class="text-2xl font-semibold md:text-3xl">{identity.name}</h1>
 					<h2 class="text-lg md:text-2xl">{identity.profession}</h2>
@@ -77,7 +78,9 @@
 		</section>
 		<br />
 		<section id="headline">
-			<div class="card p-4 sm:text-sm md:text-base">
+			<div
+				class="card card-hover from-primary-600 to-tertiary-600 text-surface-950 bg-gradient-to-br p-4 sm:text-sm md:text-base"
+			>
 				{@html identity.headline}
 			</div>
 			<div class="p-5">
