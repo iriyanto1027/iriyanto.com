@@ -213,9 +213,9 @@
 			class="flex flex-col items-center justify-between space-y-4 md:flex-row md:items-start md:space-y-0"
 		>
 			<p>
-				<a class="anchor" href="{base}/blog" target="_blank" rel="noreferrer"> Blog </a>
+				<a class="anchor" href="{base}/" target="_blank" rel="noreferrer"> Blog </a>
 				<span class="mx-2 opacity-10">|</span>
-				<a class="anchor" href="{base}/tools" target="_blank" rel="noreferrer"> Tools </a>
+				<a class="anchor" href="{base}/" target="_blank" rel="noreferrer"> Tools </a>
 			</p>
 			<div class="flex gap-3">
 				{#each socials as social}
