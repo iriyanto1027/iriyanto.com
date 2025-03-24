@@ -78,10 +78,10 @@
 		</section>
 		<br />
 		<section id="headline">
-			<div
-				class="card card-hover from-primary-600 to-tertiary-600 text-surface-950 bg-gradient-to-br p-4 sm:text-sm md:text-base"
-			>
-				{@html identity.headline}
+			<div class="card card-hover from-primary-600 to-tertiary-600 bg-gradient-to-br p-4">
+				<p class="font-medium text-slate-900 sm:text-sm md:text-base">
+					{@html identity.headline}
+				</p>
 			</div>
 			<div class="p-5">
 				<blockquote class="blockquote sm:text-sm md:text-base">
