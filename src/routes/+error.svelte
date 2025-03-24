@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>{page.status} - Iriyanto</title>
+	<title>{page.status} {page.error?.message} - Iriyanto</title>
 	<meta name="description" content="{page.status} {page.error?.message} - Iriyanto" />
 	<meta name="keywords" content="Iriyanto" />
 	<meta name="author" content="Iriyanto" />
