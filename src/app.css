@@ -1,6 +1,4 @@
 @import 'tailwindcss';
-@plugin '@tailwindcss/typography';
-@source '../node_modules/@skeletonlabs/skeleton-svelte/dist';
 
 @import '@skeletonlabs/skeleton';
 @import '@skeletonlabs/skeleton/optional/presets';
@@ -14,43 +12,15 @@
 @import '../themes/cyanida-theme.css';
 @import '../themes/medieval-theme.css';
 
-/* Dark Mode Switch */
+/* Fonts */
+@import '@fontsource-variable/playfair-display';
+
+/* Dark Mode Switch - Activates dark mode */
 @custom-variant dark (&:where([data-mode=dark], [data-mode=dark] *));
 
 /* For Selected Text */
 ::selection {
 	@apply text-surface-950; /* Ubah warna sesuai keinginan */
-}
-
-/* Added medieval fantasy styling classes */
-.medieval-texture {
-background-image: radial-gradient(circle at 25% 25%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
-	radial-gradient(circle at 75% 75%, rgba(176, 224, 230, 0.05) 0%, transparent 50%);
-}
-
-.parchment-texture {
-background-image: linear-gradient(45deg, rgba(212, 175, 55, 0.05) 25%, transparent 25%),
-	linear-gradient(-45deg, rgba(212, 175, 55, 0.05) 25%, transparent 25%);
-background-size: 20px 20px;
-}
-
-.stone-texture {
-background-image: radial-gradient(circle at 20% 80%, rgba(75, 85, 99, 0.3) 0%, transparent 50%),
-	radial-gradient(circle at 80% 20%, rgba(75, 85, 99, 0.2) 0%, transparent 50%);
-}
-
-.rune-glow {
-text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
-}
-
-.medieval-border {
-border-image: linear-gradient(
-	45deg,
-	rgba(212, 175, 55, 0.8) 0%,
-	rgba(176, 224, 230, 0.4) 50%,
-	rgba(212, 175, 55, 0.8) 100%
-	)
-	1;
 }
 
 /* Smooth scrolling for navbar links */
@@ -61,4 +31,49 @@ html {
 /* Offset for fixed navbar when scrolling to sections */
 .scroll-mt-20 {
 	scroll-margin-top: 5rem; /* Adjust for navbar height */
+}
+
+/* Custom for Medieval Theme */
+[data-theme='medieval'] {
+	--heading-font-family: 'Playfair Display', serif;
+}
+
+[data-theme='medieval'] * {
+	@apply border-primary-500 outline-secondary-500/50;
+}
+
+@layer base {
+	/* Added medieval fantasy styling classes */
+	.medieval-texture {
+		background-image:
+			radial-gradient(circle at 25% 25%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+			radial-gradient(circle at 75% 75%, rgba(176, 224, 230, 0.05) 0%, transparent 50%);
+	}
+
+	.parchment-texture {
+		background-image:
+			linear-gradient(45deg, rgba(212, 175, 55, 0.05) 25%, transparent 25%),
+			linear-gradient(-45deg, rgba(212, 175, 55, 0.05) 25%, transparent 25%);
+		background-size: 20px 20px;
+	}
+
+	.stone-texture {
+		background-image:
+			radial-gradient(circle at 20% 80%, rgba(75, 85, 99, 0.3) 0%, transparent 50%),
+			radial-gradient(circle at 80% 20%, rgba(75, 85, 99, 0.2) 0%, transparent 50%);
+	}
+
+	.rune-glow {
+		text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+	}
+
+	.medieval-border {
+		border-image: linear-gradient(
+				45deg,
+				rgba(212, 175, 55, 0.8) 0%,
+				rgba(176, 224, 230, 0.4) 50%,
+				rgba(212, 175, 55, 0.8) 100%
+			)
+			1;
+	}
 }

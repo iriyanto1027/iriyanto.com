@@ -15,7 +15,7 @@
 
 	<!-- Dark overlay for better text readability -->
 	<div
-		class="from-surface-900-50-token/70 via-surface-800-100-token/60 to-surface-900-50-token/80 absolute inset-0 bg-gradient-to-b"
+		class="from-surface-900/70 via-surface-800/60 to-surface-900/80 absolute inset-0 bg-gradient-to-b"
 	></div>
 
 	<!-- Medieval atmosphere gradient -->
@@ -28,12 +28,12 @@
 		<div class="mb-8">
 			<div class="relative inline-block">
 				<div
-					class="border-primary-500 mx-auto h-32 w-32 overflow-hidden rounded-full border-4 shadow-2xl"
+					class="border-ternary-500 mx-auto h-32 w-32 overflow-hidden rounded-full border-4 shadow-2xl"
 				>
 					<Avatar src={profileImage} size="w-32 h-32" name="Iriyanto Profile" />
 				</div>
 				<div
-					class="border-tertiary-500/30 absolute -inset-2 animate-pulse rounded-full border-2"
+					class="!border-tertiary-500/50 absolute -inset-2 animate-pulse rounded-full border-2"
 				></div>
 			</div>
 		</div>
@@ -48,17 +48,17 @@
 		</h1>
 
 		<!-- Subheadline -->
-		<p class="text-surface-600-300-token mx-auto mb-8 max-w-3xl text-xl text-pretty md:text-2xl">
+		<p class="text-surface-800-200 mx-auto mb-8 max-w-3xl text-xl text-pretty md:text-2xl">
 			{heroData.subtitle.indonesian}
 			<br />
 			<span class="text-tertiary-500">{heroData.subtitle.english}</span>
 		</p>
 
 		<!-- CTA Buttons -->
-		<div class="flex flex-col items-center justify-center gap-4 sm:flex-row">
+		<div class="flex flex-col items-center justify-center gap-10 sm:flex-row">
 			<a
 				href={heroData.cta.primary.href}
-				class="btn btn-lg variant-filled-primary group transform px-8 py-3 text-lg font-semibold transition-all duration-300 hover:scale-105"
+				class="btn btn-lg preset-filled-primary-500 group transform px-5 py-3 text-lg font-semibold transition-all duration-300 hover:scale-105"
 			>
 				<Icon
 					icon={heroData.cta.primary.icon}
@@ -69,7 +69,7 @@
 
 			<a
 				href={heroData.cta.secondary.href}
-				class="btn btn-lg variant-outline-tertiary group transform px-8 py-3 text-lg font-semibold transition-all duration-300 hover:scale-105"
+				class="btn btn-lg !preset-outlined-tertiary-500 group transform px-5 py-3 text-lg font-semibold transition-all duration-300 hover:scale-105"
 			>
 				<Icon
 					icon={heroData.cta.secondary.icon}
@@ -80,46 +80,8 @@
 		</div>
 
 		<!-- Scroll Indicator -->
-		<div class="absolute bottom-8 left-1/2 -translate-x-1/2 transform animate-bounce">
+		<div class="absolute bottom-16 left-1/2 -translate-x-1/2 transform animate-bounce md:bottom-7">
 			<Icon icon="mdi:scroll-text" class="text-primary-500 h-6 w-6" />
 		</div>
 	</div>
 </section>
-
-<style>
-	.rune-glow {
-		text-shadow: 0 0 20px rgba(var(--color-primary-500), 0.6);
-	}
-
-	.font-serif {
-		font-family: 'Playfair Display', serif;
-	}
-
-	.text-balance {
-		text-wrap: balance;
-	}
-
-	.text-pretty {
-		text-wrap: pretty;
-	}
-
-	/* Medieval atmosphere enhancement */
-	section {
-		position: relative;
-	}
-
-	section::before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		background-image:
-			radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.1) 0%, transparent 50%),
-			radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.1) 0%, transparent 50%),
-			radial-gradient(circle at 40% 80%, rgba(120, 219, 255, 0.1) 0%, transparent 50%);
-		pointer-events: none;
-		z-index: 1;
-	}
-</style>
