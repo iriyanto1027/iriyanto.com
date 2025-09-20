@@ -32,7 +32,7 @@
 			<h2 class="text-primary-500 rune-glow mb-6 font-serif text-4xl font-bold md:text-5xl">
 				The Tavern
 			</h2>
-			<p class="text-primary-100/50 mx-auto max-w-3xl text-xl text-pretty">
+			<p class="text-primary-100/75 mx-auto max-w-3xl text-xl text-pretty">
 				Welcome, fellow adventurer! Pull up a chair by the fire and let's share tales of code and
 				collaboration. Whether you seek a quest companion or wish to commission an artifact, all are
 				welcome here.
@@ -47,7 +47,7 @@
 						<Icon icon="mdi:message-text" class="text-primary-500 mr-3 h-6 w-6" />
 						Send a Message
 					</h3>
-					<p class="text-primary-100/50">
+					<p class="text-primary-100/75">
 						Share your quest details and let's forge something amazing together.
 					</p>
 				</header>
@@ -120,16 +120,16 @@
 						</h3>
 					</header>
 					<section class="space-y-4 p-4">
-						<div class="text-primary-100/50 flex items-center">
+						<div class="text-primary-100/75 flex items-center">
 							<Icon icon="mdi:email" class="text-primary-500 mr-3 h-5 w-5" />
 							<span>iriyanto1027@gmail.com</span>
 						</div>
-						<div class="text-primary-100/50 flex items-center">
+						<div class="text-primary-100/75 flex items-center">
 							<Icon icon="mdi:map-marker" class="text-primary-500 mr-3 h-5 w-5" />
 							<span>Karawang, Indonesia (Remote Available)</span>
 						</div>
 						<div class="pt-4">
-							<p class="text-primary-100/50 text-sm">
+							<p class="text-primary-100/75 text-sm">
 								Available for freelance projects, consulting, and full-time opportunities. Response
 								time: Usually within 24 hours.
 							</p>
@@ -141,7 +141,7 @@
 				<div class="card bg-surface-100-900/90 border-primary-500 border-1 p-5 shadow-xl">
 					<header class="card-header">
 						<h3 class="h4">Connect Across Realms</h3>
-						<p class="text-primary-100/50">Find me on these digital pathways</p>
+						<p class="text-primary-100/75">Find me on these digital pathways</p>
 					</header>
 					<section class="p-4">
 						<div class="grid grid-cols-2 gap-4">
@@ -167,7 +167,7 @@
 				<div class="card bg-primary-500/10 border-primary-500/30 border-1">
 					<section class="p-6 text-center">
 						<h3 class="text-primary-500 mb-2 text-lg font-bold">Ready to Begin Your Quest?</h3>
-						<p class="text-primary-100/50 mb-4 text-sm">
+						<p class="text-primary-100/75 mb-4 text-sm">
 							Let's discuss how we can bring your digital vision to life with the power of modern
 							web technologies.
 						</p>

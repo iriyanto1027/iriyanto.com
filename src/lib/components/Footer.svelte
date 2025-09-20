@@ -13,7 +13,7 @@
 				<h3 class="text-primary-500 rune-glow font-serif text-2xl font-bold">
 					{footerData.name}
 				</h3>
-				<p class="text-primary-100/50 mt-2">{footerData.profession}</p>
+				<p class="text-primary-100/75 mt-2">{footerData.profession}</p>
 			</div>
 
 			<!-- Decorative Elements -->
@@ -24,12 +24,12 @@
 			</div>
 
 			<!-- Quote -->
-			<blockquote class="text-primary-100/50 mx-auto mb-6 max-w-2xl font-serif text-lg italic">
+			<blockquote class="text-primary-100/75 mx-auto mb-6 max-w-2xl font-serif text-lg italic">
 				"{footerData.quote}"
 			</blockquote>
 
 			<!-- Copyright -->
-			<div class="text-primary-100/50 flex flex-wrap items-center justify-center space-x-2 text-sm">
+			<div class="text-primary-100/75 flex flex-wrap items-center justify-center space-x-2 text-sm">
 				<span>© {currentYear} Iriyanto. Crafted with</span>
 				<Icon icon="mdi:heart" class="h-4 w-4 text-red-500" />
 				<span>and</span>
@@ -38,7 +38,7 @@
 			</div>
 
 			<!-- Additional Info -->
-			<div class="text-primary-100/50 mt-4 text-xs">
+			<div class="text-primary-100/75 mt-4 text-xs">
 				<p>
 					Built with {footerData.techStack} • Hosted in the cloud realms of {footerData.hosting}
 				</p>

@@ -19,7 +19,7 @@
 			<h2 class="text-primary-500 rune-glow mb-6 font-serif text-4xl font-bold md:text-5xl">
 				The Chronicle
 			</h2>
-			<p class="text-primary-100/50 mx-auto max-w-3xl text-xl text-pretty">
+			<p class="text-primary-100/75 mx-auto max-w-3xl text-xl text-pretty">
 				A tale of growth, learning, and mastery in the ever-evolving realm of software development.
 				Each chapter marks a new level of expertise gained through countless quests and challenges.
 			</p>
@@ -63,7 +63,7 @@
 												{/if}
 											</div>
 
-											<div class="text-primary-100/50 mb-2 space-y-1 text-sm">
+											<div class="text-primary-100/75 mb-2 space-y-1 text-sm">
 												<div class="flex items-center">
 													<Icon icon="mdi:calendar" class="mr-2 h-4 w-4" />
 													{item.year}
@@ -74,7 +74,7 @@
 												</div>
 											</div>
 
-											<p class="text-primary-100/50 mb-4">{item.description}</p>
+											<p class="text-primary-100/75 mb-4">{item.description}</p>
 
 											<div class="flex flex-wrap gap-2">
 												{#each item.technologies as tech}

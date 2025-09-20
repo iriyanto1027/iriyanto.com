@@ -69,7 +69,7 @@
 
 			<a
 				href={heroData.cta.secondary.href}
-				class="btn btn-lg !preset-outlined-tertiary-500 group transform px-5 py-3 text-lg font-semibold transition-all duration-300 hover:scale-105"
+				class="btn btn-lg !preset-outlined-tertiary-500 text-tertiary-500 group transform px-5 py-3 text-lg font-semibold transition-all duration-300 hover:scale-105"
 			>
 				<Icon
 					icon={heroData.cta.secondary.icon}
