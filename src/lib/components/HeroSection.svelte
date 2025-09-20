@@ -42,9 +42,9 @@
 		<h1 class="rune-glow mb-6 font-serif text-4xl font-bold text-balance md:text-6xl">
 			<span class="text-primary-500">{identity.name}</span>
 			<br />
-			<span class="text-on-surface-token">Software Engineer</span>
-			<!-- <br />
-			<span class="text-tertiary-500">& Chronicler of Code</span> -->
+			<span class="">{identity.profession}</span>
+			<br />
+			<span class="text-tertiary-500">{identity.speciality}</span>
 		</h1>
 
 		<!-- Subheadline -->

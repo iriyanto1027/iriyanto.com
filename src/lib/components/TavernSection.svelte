@@ -25,7 +25,7 @@
 	};
 </script>
 
-<section id="tavern" class=" bg-surface-950 py-20">
+<section id="tavern" class=" bg-surface-950 scroll-mt-5 py-20">
 	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 		<!-- Section Header -->
 		<div class="mb-16 text-center">
@@ -178,36 +178,3 @@
 		</div>
 	</div>
 </section>
-
-<style>
-	.stone-texture {
-		background-image:
-			radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
-			radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.15) 0%, transparent 50%),
-			radial-gradient(circle at 40% 80%, rgba(120, 219, 226, 0.15) 0%, transparent 50%);
-		background-attachment: fixed;
-	}
-
-	.rune-glow {
-		text-shadow:
-			0 0 5px rgba(var(--color-primary-500), 0.5),
-			0 0 10px rgba(var(--color-primary-500), 0.3),
-			0 0 15px rgba(var(--color-primary-500), 0.1);
-		animation: runeGlow 3s ease-in-out infinite alternate;
-	}
-
-	@keyframes runeGlow {
-		from {
-			text-shadow:
-				0 0 5px rgba(var(--color-primary-500), 0.5),
-				0 0 10px rgba(var(--color-primary-500), 0.3),
-				0 0 15px rgba(var(--color-primary-500), 0.1);
-		}
-		to {
-			text-shadow:
-				0 0 8px rgba(var(--color-primary-500), 0.8),
-				0 0 15px rgba(var(--color-primary-500), 0.5),
-				0 0 20px rgba(var(--color-primary-500), 0.2);
-		}
-	}
-</style>

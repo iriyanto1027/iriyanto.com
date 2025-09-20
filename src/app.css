@@ -28,18 +28,13 @@ html {
 	scroll-behavior: smooth;
 }
 
-/* Offset for fixed navbar when scrolling to sections */
-.scroll-mt-20 {
-	scroll-margin-top: 5rem; /* Adjust for navbar height */
-}
-
 /* Custom for Medieval Theme */
 [data-theme='medieval'] {
 	--heading-font-family: 'Playfair Display', serif;
 }
 
 [data-theme='medieval'] * {
-	@apply border-primary-500 outline-secondary-500/50;
+	@apply border-primary-500/50 outline-secondary-500/50;
 }
 
 @layer base {
