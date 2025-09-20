@@ -59,7 +59,8 @@
 							<span>{post.readTime}</span>
 						</div>
 
-						<button
+						<a
+							href={post.url || '#'}
 							class="btn preset-tonal-primary group/btn hover:preset-filled-primary-500 w-full justify-between transition-all"
 						>
 							<span class="flex items-center">
@@ -70,7 +71,7 @@
 								icon="mdi:arrow-right"
 								class="h-4 w-4 transition-transform group-hover/btn:translate-x-1"
 							/>
-						</button>
+						</a>
 					</section>
 				</div>
 			{/each}

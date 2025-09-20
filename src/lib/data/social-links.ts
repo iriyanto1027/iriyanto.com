@@ -16,5 +16,11 @@ export const socialLinks = [
 		icon: 'mdi:github',
 		url: 'https://github.com/iriyanto1027',
 		color: 'hover:text-purple-400'
+	},
+	{
+		name: 'Youtube',
+		icon: 'mdi:youtube',
+		url: 'https://www.youtube.com/@kodeBackstage',
+		color: 'hover:text-red-500'
 	}
 ];

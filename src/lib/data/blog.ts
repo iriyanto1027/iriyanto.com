@@ -3,39 +3,43 @@ export interface BlogPost {
 	description: string;
 	date: string;
 	readTime: string;
-	image?: string;
 	category: string;
-	slug?: string;
+	image?: string;
+	url?: string;
 }
 
 export const blogPosts: BlogPost[] = [
 	{
-		title: 'The Art of Clean Code: Lessons from Medieval Craftsmanship',
+		title: 'Why I Started Writing a Blog as a Software Engineer',
 		description:
-			'Exploring how the principles of medieval craftsmanship apply to modern software development.',
-		date: '2024-12-15',
-		readTime: '8 min read',
-		image: 'https://picsum.photos/300/200?random=1',
-		category: 'Craftsmanship',
-		slug: 'art-of-clean-code-medieval-craftsmanship'
+			"Hi, my name is Iriyanto, and I've been working as a Software Engineer for about five years now. My primary focus is on Backend Web Development, but...",
+		date: '2025-08-13',
+		readTime: '1 min read',
+		image:
+			'https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/gWjJsIGNnbY/upload/5095df5102009fbd79d2b1ff553d74d2.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp',
+		category: 'Dev Journey',
+		url: 'https://blog.iriyanto.com/why-i-started-writing-a-blog-as-a-software-engineer'
 	},
 	{
-		title: 'Building Scalable APIs: The Fortress Architecture',
+		title: 'Self Deploy the Latest Version of Signal Server v20250822.0.0',
 		description:
-			'Designing robust APIs that can withstand the test of time, like medieval fortresses.',
-		date: '2024-12-10',
-		readTime: '12 min read',
-		image: 'https://picsum.photos/300/200?random=2',
-		category: 'Architecture',
-		slug: 'scalable-apis-fortress-architecture'
+			'Introduction Signal has become one of the most trusted messaging platforms in the world, well known for its strong emphasis on privacy and security....',
+		date: '2025-08-22',
+		readTime: '10 min read',
+		image:
+			'https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/pr5lUMgocTs/upload/0240e029e0f61656c6a834468ab0cf98.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp',
+		category: 'Signal Self-Hosting Series',
+		url: 'https://blog.iriyanto.com/self-deploy-the-latest-version-of-signal-server-v2025082200'
 	},
 	{
-		title: 'TypeScript Mastery: Forging Type-Safe Applications',
-		description: 'Master the art of TypeScript like a blacksmith masters the forge.',
-		date: '2024-12-05',
-		readTime: '15 min read',
-		image: 'https://picsum.photos/300/200?random=3',
-		category: 'TypeScript',
-		slug: 'typescript-mastery-forging-type-safe-applications'
+		title: 'Why I use NestJs for past 5 years',
+		description:
+			"Introduction It's hard to believe, but I've been using NestJS for almost five years now. My journey started back in college when I was offered a...",
+		date: '2025-09-19',
+		readTime: '9 min read',
+		image:
+			'https://cdn.hashnode.com/res/hashnode/image/upload/v1758216899850/6cf608dc-8e8d-47cb-9e1f-468f51097674.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp',
+		category: 'NestJS Series',
+		url: 'https://blog.iriyanto.com/why-i-started-writing-a-blog-as-a-software-engineer'
 	}
 ];

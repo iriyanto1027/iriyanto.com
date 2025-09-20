@@ -1,15 +1,6 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
 	import { timeline, skills } from '$lib/data';
-
-	function getTimelineIcon(iconName: string): string {
-		const iconMap: Record<string, string> = {
-			Sword: 'mdi:sword',
-			Shield: 'mdi:shield',
-			Zap: 'mdi:lightning-bolt'
-		};
-		return iconMap[iconName] || 'mdi:cog';
-	}
 </script>
 
 <section id="chronicle" class="bg-surface-100-900/20 parchment-texture scroll-mt-5 py-20">
@@ -49,7 +40,7 @@
 												? 'bg-primary-500 text-white'
 												: 'bg-surface-400 text-surface-100'}"
 										>
-											<Icon icon={getTimelineIcon(item.icon)} class="h-6 w-6" />
+											<Icon icon={item.icon || 'mdi:cog'} class="h-6 w-6" />
 										</div>
 
 										<!-- Content -->

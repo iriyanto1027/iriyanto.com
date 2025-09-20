@@ -16,36 +16,101 @@ export interface SkillGroup {
 
 export const timeline: TimelineItem[] = [
 	{
-		year: '2024',
-		title: 'Master Artificer',
-		company: 'Digital Forge Inc.',
-		location: 'Remote Realm',
-		description:
-			'Leading a guild of developers in crafting enterprise-level applications using the most powerful modern enchantments.',
-		technologies: ['React', 'Next.js', 'TypeScript', 'AWS'],
-		icon: 'Sword',
-		current: true
-	},
-	{
-		year: '2022',
-		title: 'Senior Code Weaver',
-		company: 'TechCraft Solutions',
-		location: 'Jakarta, Indonesia',
-		description:
-			'Specialized in weaving complex web applications and mentoring junior apprentices in the ancient arts of programming.',
-		technologies: ['Vue.js', 'Node.js', 'Python', 'Docker'],
-		icon: 'Shield',
+		year: 'May 2025 - August 2025',
+		title: 'Back End Developer',
+		company: 'PGNCOM',
+		location: 'Jakarta, Indonesia - Remote',
+		description: '',
+		technologies: ['Go (Programming Language)', 'GORM', 'Gin', 'PostgreSQL', 'REST APIs'],
+		icon: 'clarity:employee-solid',
 		current: false
 	},
 	{
-		year: '2020',
-		title: 'Full-Stack Adventurer',
-		company: 'StartupQuest Ltd.',
-		location: 'Bandung, Indonesia',
-		description:
-			'Embarked on numerous quests to build scalable applications from the ground up, mastering both frontend and backend realms.',
-		technologies: ['JavaScript', 'PHP', 'MySQL', 'Laravel'],
-		icon: 'Zap',
+		year: 'January 2025 - July 2025',
+		title: 'System Analyst',
+		company: 'PT Mundus Virtual Prima',
+		location: 'Bandung, Indonesia - Remote',
+		description: '',
+		technologies: [
+			'Software System Analysis',
+			'Data Synchronization',
+			'Laravel',
+			'Microsoft SQL Server',
+			'PostgreSQL'
+		],
+		icon: 'material-symbols:factory',
+		current: false
+	},
+	{
+		year: 'February 2025 - April 2025',
+		title: 'Software Engineer',
+		company: 'PT Svarga Indomulia Mediatama',
+		location: 'Jakarta, Indonesia - Remote',
+		description: '',
+		technologies: [
+			'Java',
+			'Dropwizard',
+			'Micronaut',
+			'Amazon Web Services (AWS)',
+			'Google Cloud Platform (GCP)'
+		],
+		icon: 'simple-icons:signal',
+		current: false
+	},
+	{
+		year: 'January 2022 - June 2025',
+		title: 'Software Engineer',
+		company: 'Supernova Palapa Nusantara',
+		location: 'Bandung, Indonesia - Hybrid',
+		description: '',
+		technologies: ['NestJS', 'Spring Boot', 'Laravel', 'MongoDB', 'PostgreSQL'],
+		icon: 'file-icons:nestjs',
+		current: false
+	},
+	{
+		year: 'April 2020 - March 2025',
+		title: 'Back End Developer',
+		company: 'Telkom University',
+		location: 'Bandung, Indonesia - Hybrid',
+		description: '',
+		technologies: ['NestJS', 'Laravel', 'Laravel Lumen', 'PostgreSQL', 'REST APIs'],
+		icon: 'mdi:laravel',
+		current: false
+	},
+	{
+		year: 'May 2019 - December 2019',
+		title: 'Full Stack Developer',
+		company: 'Telkom University',
+		location: 'Bandung, Indonesia - Onsite',
+		description: '',
+		technologies: [
+			'CodeIgniter',
+			'Bootstrap (Framework)',
+			'MySQL',
+			'Full-Stack Development',
+			'Web Technologies'
+		],
+		icon: 'devicon-plain:codeigniter',
+		current: false
+	},
+	{
+		year: 'January 2019 - May 2019',
+		title: 'Teaching Assistant',
+		company: 'Telkom University',
+		location: 'Bandung, Indonesia - Onsite',
+		description: '',
+		technologies: ['Subbing', 'Teacher Mentoring', 'Data Structures', 'Algorithms', 'C++'],
+		icon: 'mdi:teacher',
+		current: false
+	},
+	{
+		year: 'August 2018 - December 2018',
+		title: 'Laboratory Teaching Assistant',
+		company: 'Telkom University',
+		location: 'Bandung, Indonesia - Onsite',
+		description: '',
+		technologies: ['Data Structures', 'Algorithms', 'C++', 'Teacher Mentoring'],
+		icon: 'hugeicons:mentoring',
 		current: false
 	}
 ];
@@ -53,18 +118,18 @@ export const timeline: TimelineItem[] = [
 export const skills: SkillGroup[] = [
 	{
 		category: 'Frontend Sorcery',
-		skills: ['React', 'Next.js', 'Vue.js', 'TypeScript', 'Tailwind CSS']
+		skills: ['SvelteKit', 'TypeScript', 'Tailwind CSS']
 	},
 	{
 		category: 'Backend Mastery',
-		skills: ['Node.js', 'Python', 'PHP', 'PostgreSQL', 'MongoDB']
+		skills: ['Typescript', 'Go-lang', 'PHP', 'PostgreSQL', 'MongoDB']
 	},
 	{
 		category: 'Cloud Enchantments',
-		skills: ['AWS', 'Vercel', 'Docker', 'Kubernetes', 'CI/CD']
+		skills: ['AWS', 'Docker', 'CI/CD']
 	},
 	{
 		category: 'Tools of Power',
-		skills: ['Git', 'VS Code', 'Figma', 'Postman', 'Linux']
+		skills: ['Git', 'VS Code', 'Postman', 'Linux']
 	}
 ];

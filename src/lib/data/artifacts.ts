@@ -12,39 +12,27 @@ export interface ArtifactProject {
 
 export const artifactProjects: ArtifactProject[] = [
 	{
-		title: "Dragon's Hoard - E-commerce Platform",
+		title: 'NestJS MVP StarterKit',
 		description:
-			'A mystical marketplace where merchants can showcase their wares with the power of modern web technologies.',
-		image: 'https://picsum.photos/400/250?random=10',
-		technologies: ['Next.js', 'TypeScript', 'Supabase', 'Stripe'],
-		features: ['Real-time inventory', 'Secure payments', 'Admin dashboard'],
-		demoUrl: '#',
-		githubUrl: '#',
-		status: 'Live',
-		icon: 'Shield'
-	},
-	{
-		title: 'Rune Translator - AI Language Tool',
-		description:
-			'An enchanted tool that translates ancient runes into modern languages using the power of artificial intelligence.',
-		image: 'https://picsum.photos/400/250?random=11',
-		technologies: ['React', 'Python', 'OpenAI', 'FastAPI'],
-		features: ['AI-powered translation', 'Image recognition', 'Historical context'],
-		demoUrl: '#',
-		githubUrl: '#',
-		status: 'Beta',
-		icon: 'Zap'
-	},
-	{
-		title: 'Guild Manager - Team Collaboration',
-		description:
-			'A comprehensive system for managing adventuring parties and their quests in the digital realm.',
-		image: 'https://picsum.photos/400/250?random=12',
-		technologies: ['Vue.js', 'Node.js', 'MongoDB', 'Socket.io'],
-		features: ['Real-time chat', 'Task management', 'Progress tracking'],
+			'A robust and scalable starter kit for building MVPs with NestJS Backend featuring modular architecture, built-in authentication, and API documentation.',
+		image: 'https://miro.medium.com/v2/resize:fit:1400/0*0YVsCwrWGUScBeQx.jpeg',
+		technologies: ['NestJS', 'TypeScript'],
+		features: ['Modular architecture', 'Built-in authentication', 'API documentation'],
 		demoUrl: '#',
 		githubUrl: '#',
 		status: 'Development',
-		icon: 'Cpu'
+		icon: ''
+	},
+	{
+		title: 'SvelteKit MVP StarterKit',
+		description:
+			'A robust and scalable starter kit for building MVPs with SvelteKit Frontend featuring routing, state management, and responsive design.',
+		image: 'https://miro.medium.com/v2/resize:fit:1000/1*wfdrNnLr0mCJDEnRB8qRGA.png',
+		technologies: ['SvelteKit', 'Skeleton UI', 'TailwindCSS'],
+		features: ['Routing', 'State management', 'Responsive design'],
+		demoUrl: '#',
+		githubUrl: '#',
+		status: 'Development',
+		icon: ''
 	}
 ];
