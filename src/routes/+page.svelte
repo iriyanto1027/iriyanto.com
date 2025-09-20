@@ -1,5 +1,6 @@
 <script lang="ts">
 	import HeroSection from '$lib/components/HeroSection.svelte';
+	import TavernSection from '$lib/components/TavernSection.svelte';
 </script>
 
 <svelte:head>
@@ -13,3 +14,5 @@
 </svelte:head>
 
 <HeroSection />
+
+<TavernSection />

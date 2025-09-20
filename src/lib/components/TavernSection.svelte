@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { socialLinks } from '$lib/data';
 	import Icon from '@iconify/svelte';
 
 	interface FormData {
@@ -22,41 +23,16 @@
 		// Reset form
 		formData = { name: '', email: '', subject: '', message: '' };
 	};
-
-	const socialLinks = [
-		{
-			name: 'GitHub',
-			icon: 'mdi:github',
-			url: 'https://github.com/iriyanto',
-			color: 'hover:text-surface-400'
-		},
-		{
-			name: 'LinkedIn',
-			icon: 'mdi:linkedin',
-			url: 'https://linkedin.com/in/iriyanto',
-			color: 'hover:text-blue-400'
-		},
-		{
-			name: 'Twitter',
-			icon: 'mdi:twitter',
-			url: 'https://twitter.com/iriyanto',
-			color: 'hover:text-sky-400'
-		},
-		{
-			name: 'Email',
-			icon: 'mdi:email',
-			url: 'mailto:hello@iriyanto.com',
-			color: 'hover:text-red-400'
-		}
-	];
 </script>
 
-<section id="tavern" class="stone-texture py-20">
+<section id="tavern" class=" bg-surface-950 py-20">
 	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 		<!-- Section Header -->
 		<div class="mb-16 text-center">
-			<h2 class="text-primary rune-glow mb-6 text-4xl font-bold md:text-5xl">The Tavern</h2>
-			<p class="text-token-content-tertiary mx-auto max-w-3xl text-xl text-pretty">
+			<h2 class="text-primary-500 rune-glow mb-6 font-serif text-4xl font-bold md:text-5xl">
+				The Tavern
+			</h2>
+			<p class="text-primary-100/50 mx-auto max-w-3xl text-xl text-pretty">
 				Welcome, fellow adventurer! Pull up a chair by the fire and let's share tales of code and
 				collaboration. Whether you seek a quest companion or wish to commission an artifact, all are
 				welcome here.
@@ -65,23 +41,23 @@
 
 		<div class="grid grid-cols-1 gap-12 lg:grid-cols-2">
 			<!-- Contact Form -->
-			<div class="card bg-surface-100-800-token/90 border-surface-300-600-token shadow-xl">
-				<header class="card-header">
-					<h3 class="h3 text-token-content-primary flex items-center">
-						<Icon icon="mdi:message-text" class="text-primary mr-3 h-6 w-6" />
+			<div class="card bg-surface-100-900/90 border-primary-500 border-1 shadow-xl">
+				<header class="p-5">
+					<h3 class="h3 flex items-center">
+						<Icon icon="mdi:message-text" class="text-primary-500 mr-3 h-6 w-6" />
 						Send a Message
 					</h3>
-					<p class="text-token-content-secondary">
+					<p class="text-primary-100/50">
 						Share your quest details and let's forge something amazing together.
 					</p>
 				</header>
-				<section class="p-4">
+				<section class="p-5">
 					<form on:submit={handleSubmit} class="space-y-6">
 						<div class="grid grid-cols-1 gap-4 md:grid-cols-2">
 							<label class="label">
-								<span class="text-token-content-primary font-medium">Name</span>
+								<span class="text-surface-50 font-medium">Name</span>
 								<input
-									class="input"
+									class="input border-primary-500 border-1"
 									type="text"
 									bind:value={formData.name}
 									placeholder="Your name"
@@ -89,9 +65,9 @@
 								/>
 							</label>
 							<label class="label">
-								<span class="text-token-content-primary font-medium">Email</span>
+								<span class="text-surface-50 font-medium">Email</span>
 								<input
-									class="input"
+									class="input border-primary-500 border-1"
 									type="email"
 									bind:value={formData.email}
 									placeholder="your.email@example.com"
@@ -101,9 +77,9 @@
 						</div>
 
 						<label class="label">
-							<span class="text-token-content-primary font-medium">Subject</span>
+							<span class="text-surface-50 font-medium">Subject</span>
 							<input
-								class="input"
+								class="input border-primary-500 border-1"
 								type="text"
 								bind:value={formData.subject}
 								placeholder="What's your quest about?"
@@ -112,9 +88,9 @@
 						</label>
 
 						<label class="label">
-							<span class="text-token-content-primary font-medium">Message</span>
+							<span class="text-surface-50 font-medium">Message</span>
 							<textarea
-								class="textarea resize-none"
+								class="textarea border-primary-500 resize-none border-1"
 								bind:value={formData.message}
 								placeholder="Tell me about your project, ideas, or just say hello..."
 								rows="6"
@@ -124,7 +100,7 @@
 
 						<button
 							type="submit"
-							class="btn variant-filled-primary w-full transform font-semibold transition-all duration-300 hover:scale-105"
+							class="btn preset-filled-primary-500 w-full transform font-semibold transition-all duration-300 hover:scale-105"
 						>
 							<Icon icon="mdi:send" class="mr-2 h-5 w-5" />
 							Send Message
@@ -136,24 +112,24 @@
 			<!-- Contact Info & Social Links -->
 			<div class="space-y-8">
 				<!-- Contact Info -->
-				<div class="card bg-surface-100-800-token/90 border-surface-300-600-token">
+				<div class="card bg-surface-100-900/90 border-primary-500 border-1 p-5 shadow-xl">
 					<header class="card-header">
-						<h3 class="h4 text-token-content-primary flex items-center">
-							<Icon icon="mdi:map-marker" class="text-primary mr-3 h-5 w-5" />
+						<h3 class="h4 flex items-center">
+							<Icon icon="mdi:map-marker" class="text-primary-500 mr-3 h-5 w-5" />
 							Guild Information
 						</h3>
 					</header>
 					<section class="space-y-4 p-4">
-						<div class="text-token-content-secondary flex items-center">
-							<Icon icon="mdi:email" class="text-primary mr-3 h-5 w-5" />
-							<span>hello@iriyanto.com</span>
+						<div class="text-primary-100/50 flex items-center">
+							<Icon icon="mdi:email" class="text-primary-500 mr-3 h-5 w-5" />
+							<span>iriyanto1027@gmail.com</span>
 						</div>
-						<div class="text-token-content-secondary flex items-center">
-							<Icon icon="mdi:map-marker" class="text-primary mr-3 h-5 w-5" />
-							<span>Jakarta, Indonesia (Remote Available)</span>
+						<div class="text-primary-100/50 flex items-center">
+							<Icon icon="mdi:map-marker" class="text-primary-500 mr-3 h-5 w-5" />
+							<span>Karawang, Indonesia (Remote Available)</span>
 						</div>
 						<div class="pt-4">
-							<p class="text-token-content-secondary text-sm">
+							<p class="text-primary-100/50 text-sm">
 								Available for freelance projects, consulting, and full-time opportunities. Response
 								time: Usually within 24 hours.
 							</p>
@@ -162,10 +138,10 @@
 				</div>
 
 				<!-- Social Links -->
-				<div class="card bg-surface-100-800-token/90 border-surface-300-600-token">
+				<div class="card bg-surface-100-900/90 border-primary-500 border-1 p-5 shadow-xl">
 					<header class="card-header">
-						<h3 class="h4 text-token-content-primary">Connect Across Realms</h3>
-						<p class="text-token-content-secondary">Find me on these digital pathways</p>
+						<h3 class="h4">Connect Across Realms</h3>
+						<p class="text-primary-100/50">Find me on these digital pathways</p>
 					</header>
 					<section class="p-4">
 						<div class="grid grid-cols-2 gap-4">
@@ -174,7 +150,7 @@
 									href={link.url}
 									target="_blank"
 									rel="noopener noreferrer"
-									class="btn variant-outline-surface group border-surface-300-600-token hover:border-primary/50 transform transition-all duration-300 hover:scale-105 {link.color}"
+									class="btn preset-outlined-primary-500 group hover:border-primary/50 transform transition-all duration-300 hover:scale-105 {link.color}"
 								>
 									<Icon
 										icon={link.icon}
@@ -188,14 +164,14 @@
 				</div>
 
 				<!-- Call to Action -->
-				<div class="card bg-primary/10 border-primary/30">
+				<div class="card bg-primary-500/10 border-primary-500/30 border-1">
 					<section class="p-6 text-center">
-						<h3 class="text-primary mb-2 text-lg font-bold">Ready to Begin Your Quest?</h3>
-						<p class="text-token-content-secondary mb-4 text-sm">
+						<h3 class="text-primary-500 mb-2 text-lg font-bold">Ready to Begin Your Quest?</h3>
+						<p class="text-primary-100/50 mb-4 text-sm">
 							Let's discuss how we can bring your digital vision to life with the power of modern
 							web technologies.
 						</p>
-						<button class="btn variant-filled-primary"> Start Your Adventure </button>
+						<button class="btn preset-filled-primary-500"> Start Your Adventure </button>
 					</section>
 				</div>
 			</div>

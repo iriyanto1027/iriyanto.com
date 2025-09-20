@@ -1,6 +1,6 @@
 // Barrel exports for all data constants
 export { identity } from './identity.js';
-export { socials } from './socials.js';
+export { socialLinks } from './social-links.js';
 export { navItems } from './navigation.js';
 export { footerData } from './footer.js';
 export { heroData } from './hero.js';
