@@ -86,7 +86,7 @@
 				rel="noopener"
 			>
 				<Icon icon="mdi:book-open-variant" class="mr-2 h-5 w-5" />
-				Explore All Chronicles
+				Explore All Grimoire Entries
 			</a>
 		</div>
 	</div>

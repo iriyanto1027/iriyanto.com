@@ -1,6 +1,6 @@
 <svelte:head>
 	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-X7S1L7SYEH"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-5CD5PHR0HY"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() {
@@ -8,6 +8,6 @@
 		}
 		gtag('js', new Date());
 
-		gtag('config', 'G-X7S1L7SYEH');
+		gtag('config', 'G-5CD5PHR0HY');
 	</script>
 </svelte:head>
