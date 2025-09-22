@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
 	import { Avatar } from '@skeletonlabs/skeleton-svelte';
-	import profileImage from '$lib/assets/iriyanto-profile-2.png';
+	import profileImage from '$lib/assets/iriyanto-profile-2.avif';
 	import castleBackground from '$lib/assets/medieval-castle-silhouette-in-misty-mountains-skyr.jpg';
 	import { identity, heroData } from '$lib/data';
 </script>
@@ -48,7 +48,7 @@
 		</h1>
 
 		<!-- Subheadline -->
-		<p class="text-surface-800-200 mx-auto mb-8 max-w-3xl text-xl text-pretty md:text-2xl">
+		<p class="text-primary-50 mx-auto mb-8 max-w-3xl text-xl text-pretty md:text-2xl">
 			{heroData.subtitle.indonesian}
 			<br />
 			<span class="text-tertiary-500">{heroData.subtitle.english}</span>

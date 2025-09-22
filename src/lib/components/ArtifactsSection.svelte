@@ -125,6 +125,7 @@
 								target="_blank"
 								rel="noopener noreferrer"
 								class="btn btn-sm !preset-outlined-tertiary-400-600"
+								aria-label="View Source Code on GitHub"
 							>
 								<Icon icon="mdi:github" class="h-4 w-4" />
 							</a>
