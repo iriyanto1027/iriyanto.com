@@ -249,9 +249,10 @@ export default function Home() {
               </div>
               <Button variant="outline" asChild>
                 <a
-                  href="https://github.com/iriyanto"
+                  href="https://github.com/iriyanto1027"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="View GitHub profile (opens in new tab)"
                 >
                   View GitHub
                   <ArrowRight className="ml-2 h-4 w-4" />

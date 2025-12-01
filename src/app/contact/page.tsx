@@ -258,7 +258,10 @@ export default function ContactPage() {
                                 }
                                 required
                               >
-                                <SelectTrigger>
+                                <SelectTrigger
+                                  id="inquiryType"
+                                  aria-label="Select inquiry type"
+                                >
                                   <SelectValue placeholder="Select type" />
                                 </SelectTrigger>
                                 <SelectContent>

@@ -61,7 +61,12 @@ export function Header() {
               {link.label}
             </Link>
           ))}
-          <Button variant="ghost" size="icon" onClick={toggleTheme}>
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={toggleTheme}
+            aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
+          >
             {isDark ? (
               <Sun className="h-5 w-5" />
             ) : (
@@ -72,7 +77,12 @@ export function Header() {
 
         {/* Mobile Navigation */}
         <div className="flex md:hidden items-center gap-2">
-          <Button variant="ghost" size="icon" onClick={toggleTheme}>
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={toggleTheme}
+            aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
+          >
             {isDark ? (
               <Sun className="h-5 w-5" />
             ) : (

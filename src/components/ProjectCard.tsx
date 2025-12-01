@@ -1,7 +1,12 @@
 "use client";
 
 import { Badge } from "@/components/ui/badge";
-import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+} from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github, Star } from "lucide-react";
 
@@ -33,7 +38,11 @@ export function ProjectCard({
   };
 
   return (
-    <Card className={`group transition-all duration-300 hover:shadow-lg hover:border-primary/50 ${featured ? "border-primary/30 bg-primary/5" : ""}`}>
+    <Card
+      className={`group transition-all duration-300 hover:shadow-lg hover:border-primary/50 ${
+        featured ? "border-primary/30 bg-primary/5" : ""
+      }`}
+    >
       <CardHeader className="pb-2">
         <div className="flex items-start justify-between">
           <h3 className="font-semibold text-lg group-hover:text-primary transition-colors">
@@ -45,7 +54,9 @@ export function ProjectCard({
         </div>
       </CardHeader>
       <CardContent className="pb-4">
-        <p className="text-sm text-muted-foreground line-clamp-2">{description}</p>
+        <p className="text-sm text-muted-foreground line-clamp-2">
+          {description}
+        </p>
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
             <Badge key={tag} variant="outline" className="text-xs">
@@ -66,14 +77,24 @@ export function ProjectCard({
         <div className="flex gap-2">
           {githubUrl && (
             <Button variant="ghost" size="sm" asChild>
-              <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+              <a
+                href={githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View GitHub repository (opens in new tab)"
+              >
                 <Github className="h-4 w-4" />
               </a>
             </Button>
           )}
           {liveUrl && (
             <Button variant="ghost" size="sm" asChild>
-              <a href={liveUrl} target="_blank" rel="noopener noreferrer">
+              <a
+                href={liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View live project (opens in new tab)"
+              >
                 <ExternalLink className="h-4 w-4" />
               </a>
             </Button>
