@@ -31,7 +31,7 @@ export default function AboutPage() {
               <div className="space-y-6">
                 <Badge variant="secondary" className="px-4 py-1">
                   <MapPin className="h-3 w-3 mr-1" />
-                  Based in Jakarta, Indonesia
+                  Based in Karawang, West Java, Indonesia
                 </Badge>
                 <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
                   The Story Behind the Code

@@ -38,13 +38,13 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Location",
-    value: "Karawang, Indonesia",
+    value: "Karawang, West Java, Indonesia",
     href: "#",
   },
   {
     icon: Clock,
     label: "Response Time",
-    value: "Within 24 hours",
+    value: "Within 24-48 hours",
     href: "#",
   },
 ];
@@ -205,7 +205,7 @@ export default function ContactPage() {
                         </h3>
                         <p className="text-muted-foreground mb-6">
                           Thank you for reaching out. I'll get back to you
-                          within 24 hours.
+                          within 24-48 hours.
                         </p>
                         <Button onClick={() => setIsSubmitted(false)}>
                           Send Another Message

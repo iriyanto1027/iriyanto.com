@@ -60,7 +60,7 @@ export const timeline: {
     year: "Aug 2025 - Sep 2025",
     title: "System Analyst",
     company: "PT Mundus Virtual Prima",
-    location: "Bandung, West Java, Indonesia",
+    location: "Remote (Bandung, West Java, Indonesia)",
     responsibilities: [
       "Architected and implemented comprehensive MS SQL database solutions for inventory management, enabling scalable data storage and efficient query performance across manufacturing operations.",
       "Developed and deployed advanced estimation stock algorithms using statistical forecasting models, significantly improving inventory prediction accuracy and reducing stockout incidents.",
@@ -76,7 +76,7 @@ export const timeline: {
     year: "May 2025 - Sep 2025",
     title: "Back End Engineer",
     company: "PGNCOM",
-    location: "Jakarta, Indonesia",
+    location: "Remote (Jakarta, Indonesia)",
     responsibilities: [
       "Engineered the backend architecture for PGNCOM's Employee Self-Service (ESS) platform – BLYNC, using Golang (Gin) and GORM, ensuring modularity and scalability for future product expansion.",
       "Designed and optimized PostgreSQL schemas with strict normalization and indexing strategies, improving query performance and maintaining enterprise-grade data consistency.",
@@ -92,7 +92,7 @@ export const timeline: {
     year: "Jan 2025 - Jul 2025",
     title: "System Analyst",
     company: "PT Mundus Virtual Prima",
-    location: "Bandung, West Java, Indonesia",
+    location: "Remote (Bandung, West Java, Indonesia)",
     responsibilities: [
       "Led the design and development of a real-time Overall Equipment Effectiveness (OEE) system using Laravel, MS SQL, and PostgreSQL, optimizing production insights across multiple manufacturing lines.",
       "Integrated machine data with the Andon system, enabling instant visibility of downtime and maintenance alerts for faster response and reduced idle time.",
@@ -107,7 +107,7 @@ export const timeline: {
     year: "Feb 2025 - Apr 2025",
     title: "Back End Engineer",
     company: "PT Svarga Indomulia Mediatama",
-    location: "Jakarta, Indonesia",
+    location: "Remote (Jakarta, Indonesia)",
     responsibilities: [
       "Independently customized and deployed the open-source Signal Server, tailoring it to meet unique client requirements for secure messaging infrastructure.",
       "Developed and maintained critical backend services such as Registration, Storage, and Contact Discovery, ensuring performance, reliability, and scalability.",
@@ -122,7 +122,7 @@ export const timeline: {
     year: "Apr 2020 - Mar 2025",
     title: "Back End Developer",
     company: "Telkom University",
-    location: "Bandung, West Java, Indonesia",
+    location: "Remote (Bandung, West Java, Indonesia)",
     responsibilities: [
       "Developed and maintained backend services for Sirama and Igracias, Telkom University's production-grade academic platforms, using NestJS, Laravel, and PostgreSQL to ensure high reliability for thousands of daily users.",
       "Designed and optimized RESTful APIs, refactoring critical endpoints to reduce response time and improve throughput on production servers.",
@@ -140,7 +140,7 @@ export const timeline: {
     year: "Jun 2023 - Dec 2023",
     title: "Back End Engineer",
     company: "Moonlight Technology",
-    location: "Bandung, West Java, Indonesia",
+    location: "Remote (Bandung, West Java, Indonesia)",
     responsibilities: [
       "Architected and implemented a multi-tenant SaaS e-commerce backend using NestJS, Prisma, and PostgreSQL, enabling scalable onboarding for multiple B2C stores.",
       "Designed normalized database schema with relational integrity in PostgreSQL, optimizing query performance and data consistency across tenants.",
@@ -158,7 +158,7 @@ export const timeline: {
     year: "Sep 2020 - Dec 2020",
     title: "Back End Engineer",
     company: "Moonlight Technology",
-    location: "Bandung, West Java, Indonesia",
+    location: "Remote (Bandung, West Java, Indonesia)",
     responsibilities: [
       "Designed and implemented the backend architecture for a military-grade vessel tracking system using NestJS and MongoDB, ensuring high scalability and data integrity across mission-critical operations.",
       "Modeled and optimized database schemas with Mongoose, achieving efficient geospatial data handling and query performance for real-time vessel monitoring.",
@@ -176,7 +176,7 @@ export const timeline: {
     year: "May 2019 - Dec 2019",
     title: "Full Stack Developer",
     company: "Telkom University",
-    location: "Bandung, West Java, Indonesia",
+    location: "On-site (Bandung, West Java, Indonesia)",
     responsibilities: [
       "Designed and developed a comprehensive web-based system to monitor and manage PhD study progress for faculty members at Telkom University.",
       "Built a robust and scalable RESTful API using the CodeIgniter framework, enabling smooth data exchange and integration with external systems.",
@@ -191,7 +191,7 @@ export const timeline: {
     year: "Jan 2019 - May 2019",
     title: "Teaching Assistant",
     company: "Telkom University",
-    location: "Bandung, West Java, Indonesia",
+    location: "On-site (Bandung, West Java, Indonesia)",
     responsibilities: [
       "Collaborated closely with lecturers to assist students in mastering key topics in Data Structures and Algorithms, ensuring alignment with the course curriculum.",
       "Designed and led interactive review sessions that simplified complex programming concepts such as recursion, graph theory, and dynamic programming.",
@@ -206,7 +206,7 @@ export const timeline: {
     year: "Aug 2018 - Dec 2018",
     title: "Laboratory Teaching Assistant",
     company: "Telkom University",
-    location: "Bandung, West Java, Indonesia",
+    location: "On-site (Bandung, West Java, Indonesia)",
     responsibilities: [
       "Assisted students in practical applications of data structures, enhancing their understanding of algorithms and programming.",
       "Guided learners through complex coding challenges, fostering academic and professional growth in computer science.",
