@@ -94,30 +94,30 @@ export const caseStudies: {
   metrics?: { label: string; value: string }[];
   href?: string;
 }[] = [
-  {
-    title: "E-Commerce Platform Redesign",
-    description:
-      "Complete overhaul of a legacy e-commerce system, improving performance by 300% and conversion rates by 45%.",
-    image:
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=450&fit=crop",
-    category: "E-Commerce",
-    metrics: [
-      { label: "Performance Boost", value: "300%" },
-      { label: "Conversion Rate", value: "+45%" },
-    ],
-  },
-  {
-    title: "FinTech Mobile App",
-    description:
-      "Built a secure, high-performance mobile banking application serving 500K+ daily active users.",
-    image:
-      "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=450&fit=crop",
-    category: "FinTech",
-    metrics: [
-      { label: "Daily Users", value: "500K+" },
-      { label: "Uptime", value: "99.99%" },
-    ],
-  },
+  // {
+  //   title: "E-Commerce Platform Redesign",
+  //   description:
+  //     "Complete overhaul of a legacy e-commerce system, improving performance by 300% and conversion rates by 45%.",
+  //   image:
+  //     "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=450&fit=crop",
+  //   category: "E-Commerce",
+  //   metrics: [
+  //     { label: "Performance Boost", value: "300%" },
+  //     { label: "Conversion Rate", value: "+45%" },
+  //   ],
+  // },
+  // {
+  //   title: "FinTech Mobile App",
+  //   description:
+  //     "Built a secure, high-performance mobile banking application serving 500K+ daily active users.",
+  //   image:
+  //     "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=450&fit=crop",
+  //   category: "FinTech",
+  //   metrics: [
+  //     { label: "Daily Users", value: "500K+" },
+  //     { label: "Uptime", value: "99.99%" },
+  //   ],
+  // },
 ];
 
 export const openSourceProjects: {

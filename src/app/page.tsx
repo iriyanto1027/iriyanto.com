@@ -162,6 +162,12 @@ export default function Home() {
                 </Link>
               </Button>
             </div>
+            {caseStudies.length === 0 && (
+              <p className="text-center text-muted-foreground">
+                No case studies available at the moment. Please check back
+                later.
+              </p>
+            )}
             <div className="grid md:grid-cols-2 gap-8">
               {caseStudies.map((study) => (
                 <CaseStudyCard
